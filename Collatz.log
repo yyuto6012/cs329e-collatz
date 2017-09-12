@@ -1,0 +1,80 @@
+commit 7b0e91932796813bb268132915310a8137fe42ed
+Merge: 3d23595 228c82e
+Author: yyuto6012 <yyabu0618@gmail.com>
+Date:   Wed Sep 6 20:06:48 2017 -0500
+
+    Merge pull request #1 from yyuto6012/adding-travis-yml-file
+    
+    added travis yml file
+
+commit 228c82e41b8384b9c64c651fc52c889f1f26c4d6
+Author: yyuto6012 <(yyabu0618@gmail.com)>
+Date:   Wed Sep 6 19:50:31 2017 -0500
+
+    delete 3.6 version
+
+commit 1fc76222f8d47977106d585d702455462c141da9
+Author: yyuto6012 <(yyabu0618@gmail.com)>
+Date:   Wed Sep 6 19:43:24 2017 -0500
+
+    move all files to Folder
+
+commit dccee4a168f5013bb5536bda06959bbf74943b5d
+Author: yyuto6012 <(yyabu0618@gmail.com)>
+Date:   Tue Sep 5 19:36:51 2017 -0500
+
+    modified python version
+
+commit 28f0dee1d8bf8a91be8867d97ae6b9aaece32682
+Author: yyuto6012 <(yyabu0618@gmail.com)>
+Date:   Tue Sep 5 19:30:13 2017 -0500
+
+    recreated yml file
+
+commit a471ab97293babc6c78b2bd3765f687903cfc9f0
+Author: yyuto6012 <(yyabu0618@gmail.com)>
+Date:   Tue Sep 5 19:29:08 2017 -0500
+
+    delete yml file
+
+commit fb0db8237df6a0529f4f700f8b8bddd2928d3541
+Author: yyuto6012 <(yyabu0618@gmail.com)>
+Date:   Tue Sep 5 19:17:53 2017 -0500
+
+    modified 5 travis yml file
+
+commit 273da2c96e3e7cbc0b354402c77c5973eeda93fa
+Author: yyuto6012 <(yyabu0618@gmail.com)>
+Date:   Tue Sep 5 19:08:43 2017 -0500
+
+    modified 4 yml file
+
+commit 397f11c3640b26f3299b2ac567227c1a121a920a
+Author: yyuto6012 <(yyabu0618@gmail.com)>
+Date:   Tue Sep 5 19:04:55 2017 -0500
+
+    modified3 yml file
+
+commit 5f04f7be870bc894d31f37f8750acb77a344476e
+Author: yyuto6012 <(yyabu0618@gmail.com)>
+Date:   Tue Sep 5 19:03:15 2017 -0500
+
+    modified 2 yml file
+
+commit c8efd656581b1da419d22b7d75b61ce9bfd1ce1a
+Author: yyuto6012 <(yyabu0618@gmail.com)>
+Date:   Tue Sep 5 18:48:16 2017 -0500
+
+    modified travis yml file
+
+commit 506114c175a0d6193ab74413680c9e05567af5d6
+Author: yyuto6012 <(yyabu0618@gmail.com)>
+Date:   Tue Sep 5 18:42:58 2017 -0500
+
+    added travis yml file
+
+commit 3d235950ce6b078ed9120233f2de26a0c88aae52
+Author: yyuto6012 <(yyabu0618@gmail.com)>
+Date:   Tue Sep 5 18:30:29 2017 -0500
+
+    first commit README
