@@ -35,15 +35,26 @@ def collatz_eval(i, j):
     """
     circle = 1
     c_list = []
-    for c in list(range(i, j+1)):
-        if c > 0:
-            while c != 1:
-                if c%2 == 0:
-                    c = c / 2
-                else:
-                    c = c * 3 + 1
-                circle += 1
-            c_list.append(circle)
+    if i <= j:
+        for c in list(range(i, j+1)):
+            if c > 0:
+                while c != 1:
+                    if c%2 == 0:
+                        c = c / 2
+                    else:
+                        c = c * 3 + 1
+                    circle += 1
+                c_list.append(circle)
+    else:
+        for c in list(range(j, i+1)):
+            if c > 0:
+                while c != 1:
+                    if c%2 == 0:
+                        c = c / 2
+                    else:
+                        c = c * 3 + 1
+                    circle += 1
+                c_list.append(circle)
     return sorted(c_list, reverse=True)[0]
 
 # -------------
