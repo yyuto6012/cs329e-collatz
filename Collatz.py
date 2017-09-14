@@ -9,7 +9,6 @@
 # ------------
 # collatz_read
 # ------------
-
 def collatz_read(s):
     """
     read two ints
@@ -18,6 +17,7 @@ def collatz_read(s):
     """
 
     # what's s
+    print(s)
     a = s.split()
     return [int(a[0]), int(a[1])]
 
@@ -33,28 +33,26 @@ def collatz_eval(i, j):
     j the end       of the range, inclusive
     return the max cycle length of the range [i, j]
     """
-    circle = 1
+    circle_cache = {}
     c_list = []
-    if i <= j:
-        for c in list(range(i, j+1)):
-            if c > 0:
-                while c != 1:
-                    if c%2 == 0:
-                        c = c / 2
-                    else:
-                        c = c * 3 + 1
-                    circle += 1
-                c_list.append(circle)
-    else:
-        for c in list(range(j, i+1)):
-            if c > 0:
-                while c != 1:
-                    if c%2 == 0:
-                        c = c / 2
-                    else:
-                        c = c * 3 + 1
-                    circle += 1
-                c_list.append(circle)
+    if i > j:
+        i, j = j, i
+
+    for c in list(range(i, j+1)):
+        circle = 1
+        original_c = c
+        while c != 1:
+            if c in circle_cache:
+                circle += circle_cache[c] - 1
+                break
+            else:
+                if c%2 == 0:
+                    c = c // 2
+                else:
+                    c = c * 3 + 1
+                circle += 1
+        circle_cache[original_c] = circle
+        c_list.append(circle)
     return sorted(c_list, reverse=True)[0]
 
 # -------------
