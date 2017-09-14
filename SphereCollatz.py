@@ -1,0 +1,88 @@
+import sys
+
+def collatz_read(s):
+    """
+    read two ints
+    s a string
+    return a list of two ints, representing the beginning and end of a range, [i, j]
+    """
+
+    # what's s
+    print(s)
+    a = s.split()
+    return [int(a[0]), int(a[1])]
+
+# ------------
+# collatz_eval
+# ------------
+
+
+def collatz_eval(i, j):
+    """
+    collatz circle
+    i the beginning of the range, inclusive
+    j the end       of the range, inclusive
+    return the max cycle length of the range [i, j]
+    """
+    circle_cache = {}
+    c_list = []
+    if i > j:
+        i, j = j, i
+
+    for c in list(range(i, j+1)):
+        circle = 1
+        original_c = c
+        while c != 1:
+            if c in circle_cache:
+                circle += circle_cache[c] - 1
+                break
+            else:
+                if c%2 == 0:
+                    c = c // 2
+                else:
+                    c = c * 3 + 1
+                circle += 1
+        circle_cache[original_c] = circle
+        c_list.append(circle)
+    return sorted(c_list, reverse=True)[0]
+
+# -------------
+# collatz_print
+# -------------
+
+
+def collatz_print(w, i, j, v):
+    """
+    print three ints
+    w a writer
+    i the beginning of the range, inclusive
+    j the end       of the range, inclusive
+    v the max cycle length
+    """
+    w.write(str(i) + " " + str(j) + " " + str(v) + "\n")
+
+# -------------
+# collatz_solve
+# -------------
+
+
+def collatz_solve(r, w):
+    """
+    r a reader
+    w a writer
+    """
+    for s in r:
+        i, j = collatz_read(s)
+        v = collatz_eval(i, j)
+        collatz_print(w, i, j, v)
+
+if __name__ == "__main__":
+    fr = "RunCollatz.in"
+    fw = "RunCollatz.out"
+    if fr:
+      fr = open(fr, "r")
+      fw = open(fw, "w")
+      collatz_solve(fr, fw)
+    else:
+      collatz_solve(sys.stdin, sys.stdout)
+
