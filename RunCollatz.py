@@ -19,6 +19,13 @@ from Collatz import collatz_solve
 # ----
 
 if __name__ == "__main__":
+    """fr = "RunCollatz.in"
+                fw = "RunCollatz.out"
+                if fr:
+                  fr = open(fr, "r")
+                  fw = open(fw, "w")
+                  collatz_solve(fr, fw)
+                else:"""
     collatz_solve(sys.stdin, sys.stdout)
 
 """ #pragma: no cover
