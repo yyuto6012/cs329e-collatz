@@ -8,7 +8,6 @@ def collatz_read(s):
     """
 
     # what's s
-    print(s)
     a = s.split()
     return [int(a[0]), int(a[1])]
 
