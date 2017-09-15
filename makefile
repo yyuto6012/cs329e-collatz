@@ -8,10 +8,10 @@ FILES :=                              \
     TestCollatz.out                   \
     TestCollatz.py
 
-#    collatz-tests/EID-RunCollatz.in   \
-#    collatz-tests/EID-RunCollatz.out  \
-#    collatz-tests/EID-TestCollatz.out \
-#    collatz-tests/EID-TestCollatz.py  \
+   collatz-tests/yy7744-RunCollatz.in   \
+   collatz-tests/yy7744-RunCollatz.out  \
+   collatz-tests/yy7744-TestCollatz.out \
+   collatz-tests/yy7744-TestCollatz.py  \
 
 ifeq ($(shell uname), Darwin)          # Apple
     PYTHON   := python3.5
