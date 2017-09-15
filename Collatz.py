@@ -16,8 +16,6 @@ def collatz_read(s):
     return a list of two ints, representing the beginning and end of a range, [i, j]
     """
 
-    # what's s
-    print(s)
     a = s.split()
     return [int(a[0]), int(a[1])]
 
