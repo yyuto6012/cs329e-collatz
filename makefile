@@ -6,12 +6,11 @@ FILES :=                              \
     RunCollatz.out                    \
     RunCollatz.py                     \
     TestCollatz.out                   \
-    TestCollatz.py
-
-   collatz-tests/yy7744-RunCollatz.in   \
-   collatz-tests/yy7744-RunCollatz.out  \
-   collatz-tests/yy7744-TestCollatz.out \
-   collatz-tests/yy7744-TestCollatz.py  \
+    TestCollatz.py \
+    collatz-tests/yy7744-RunCollatz.in   \
+   	collatz-tests/yy7744-RunCollatz.out  \
+ 		collatz-tests/yy7744-TestCollatz.out \
+    collatz-tests/yy7744-TestCollatz.py  \
 
 ifeq ($(shell uname), Darwin)          # Apple
     PYTHON   := python3.5
